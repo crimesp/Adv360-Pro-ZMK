@@ -58,15 +58,7 @@
         bindings = <&as>, <&ac>;  /* first pair will be forwarded to auto_shift, second to auto_control */
     };
 
-
-/* helper macro for keymap usage */
-#define TD_AS_AC(keycode) &td_as_ac LSHIFT keycode LCTRL keycode
-
-/* example keymap usage (replace the A key entry with this) */
-/* &kp A  -> normal tap
-   hold -> Shift + A (auto_shift)
-   tap then hold -> Control + A (auto_control)
-*/
+}
 
   keymap {
     compatible = "zmk,keymap";
